@@ -39,7 +39,7 @@ const MyAccount = () => {
       }
 
       const data = await response.json();
-      setIsSubscribed(data.isSubscribed);
+      setIsSubscribed(Boolean(data.isSubscribed));
     } catch (error) {
       console.error("Error fetching promotion status:", error);
     }
@@ -225,7 +225,7 @@ const MyAccount = () => {
           Subscribed! Enjoy 20% off on hotel bookings.
         </p>
       )}
-      {/* Popup */}
+
       {showPopup && <div className="popup">{message}</div>}
     </div>
   );

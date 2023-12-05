@@ -106,7 +106,7 @@ const MaintainAir = () => {
           ))}
         </tbody>
       </table>
-      <button onClick={handleNextButtonClick}>Next</button>
+      <button onClick={handleNextButtonClick}>Delete Selected Aircraft</button>
     </div>
   );
 };
