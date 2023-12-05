@@ -16,9 +16,6 @@ const SelectFlights = () => {
   useEffect(() => {
     const getFlights = async () => {
       try {
-        console.log("Departure:", departure);
-        console.log("Arrival:", arrival);
-        console.log("Formatted Start Date:", formattedStartDate);
         let response = await fetch("http://localhost:8081/api/getflights", {
           method: "POST",
           headers: {
